@@ -4,7 +4,7 @@
 <body>
 <?php
 $string = "string datatype";
-$boolean = [false] ; 
+$boolean = false ; 
 $integer = 13;
 $decimals = 10.5;
 echo "Data-types are defined by the values it can take, the programming language used, or the operations that can be performed on it.";
