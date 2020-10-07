@@ -12,7 +12,7 @@ echo "<h1>Contact Form.<br></h1>";
         Name: <br><input type="text" name="Username"><br>
         Email: <br><input type="email" name="Email"><br>
         Message: <br><textarea name="Comment" rows="5" cols="40"> </textarea><br>
-        <input type="submit">
+        <input type="submit" name="submit" value=true>
       
    </form>
 
