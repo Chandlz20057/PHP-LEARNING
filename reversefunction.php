@@ -3,6 +3,8 @@
 <head>
 <body>
 <?php
+$string = "HELLO";  
+
 function reverse_string($string){
 strlen($string);
 for ($i = 0; $i < strlen($string); $i++); {
@@ -10,7 +12,8 @@ for ($i = 0; $i < strlen($string); $i++); {
              
 }
 }
-echo "$string";
+echo "Reverse string == $string. " .strrev ( $string );
+
 
 ?>
 </body>
