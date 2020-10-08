@@ -1,7 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<body>
+
 <?php
 
 function reverse_string($string) {
@@ -19,6 +16,3 @@ function reverse_string($string) {
 
 
 ?>
-</body>
-</head>
-</html>
