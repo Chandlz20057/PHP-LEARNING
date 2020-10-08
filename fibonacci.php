@@ -1,5 +1,5 @@
 <?php
-function fibonacci($sequence){
+function fibonacci(){
     $num1 = 0;
     $num2 = 1;
 
@@ -9,3 +9,5 @@ function fibonacci($sequence){
     }
     echo $num1;
 }
+
+fibonacci();
