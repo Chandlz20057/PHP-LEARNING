@@ -3,16 +3,19 @@
 <head>
 <body>
 <?php
-$string = "HELLO";  
 
-function reverse_string($string){
-strlen($string);
-for ($i = 0; $i < strlen($string); $i++); {
-        $letter = $string[$i];
-             
-}
-}
-echo "Reverse string == $string. " .strrev ( $string );
+function reverse_string($string) {
+        $length = strlen($string) - 1;
+        $newString = '';
+        
+        for ($i = 0; $i <= $length; $i++) {
+            $newString = $newString . $string[$length - $i];
+        }
+        
+        echo $newString;
+    }
+    
+    reverse_string('Hello');
 
 
 ?>
