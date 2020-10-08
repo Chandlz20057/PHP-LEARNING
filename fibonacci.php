@@ -8,5 +8,5 @@ function fibonacci(){
         $num1 = $num1 + $num2;
         $num2 = prev($num1);
     }
-    echo "$num1";
+    echo $num1;
 }
