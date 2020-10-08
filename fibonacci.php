@@ -1,6 +1,5 @@
 <?php
-
-function fibonacci(){
+function fibonacci($sequence){
     $num1 = 0;
     $num2 = 1;
 
