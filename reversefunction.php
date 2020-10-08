@@ -10,12 +10,12 @@ function reverse_string($string) {
         
         for ($i = 0; $i <= $length; $i++) {
             $newString = $newString . $string[$length - $i];
-        }
+}
         
         echo $newString;
-    }
+}
     
-    reverse_string('Hello');
+    reverse_string('Chandlz20057');
 
 
 ?>
