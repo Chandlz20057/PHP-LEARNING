@@ -15,4 +15,4 @@ function reverse_string($string) {
     reverse_string('Chandlz20057');
 
 
-?>
+
