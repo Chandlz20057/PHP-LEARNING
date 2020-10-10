@@ -12,6 +12,8 @@ function fibonacci($until) {
         $num3 = $num1 + $num2;
         $num1 = $num2;
         $num2 = $num3;
+
+        echo "{$num3} <br />";
     }
 }
 
