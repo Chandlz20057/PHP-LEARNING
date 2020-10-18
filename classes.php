@@ -6,46 +6,6 @@ function pretty_dump($arg) {
     echo '</pre>';
 }
 
-$ryan = 'Ryan';
-$cameron = 'Cameron';
-$chloe = 'Chloe';
-
-echo $ryan . '<br />' . $cameron . '<br />' . $chloe . '<br />';
-
-class Person {
-
-    public $name;
-
-    public $age;
-
-    public function getName() {
-        return $this->name;
-    }
-
-    public function getAge() {
-        return $this->age;
-    }
-}
-
-$mom = new Person;
-
-$mom->name = 'Clair';
-
-pretty_dump($mom);
-
-$mom->age = 39;
-
-pretty_dump($mom);
-
-echo '<br />';
-
-echo $mom->getName();
-
-echo '<br />';
-
-echo $mom->getAge();
-
-echo '<br />';
 
 class Family {
 
