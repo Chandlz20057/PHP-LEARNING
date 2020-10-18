@@ -56,7 +56,6 @@ $family = new Family('Grayston', [
 
 ]);
 
-$family->add(new FamilyMember('Gracie', 10, 'Brown'));
 
 pretty_dump($family);
 
