@@ -1,6 +1,6 @@
 <?php
 
-interface Database {
+interface Payment {
     //function def
     function listorders();
     function addorder();
@@ -8,7 +8,7 @@ interface Database {
 
 }
 
-class mysqldatabase implements Database {
+class contactless implements Payment {
 
     public function listorders(){
         //Listing orders
@@ -22,8 +22,7 @@ class mysqldatabase implements Database {
     }
 }
 
-class Oracledatabase implements Database {
-
+class card implements Payment {
     public function listorders(){
         //Listing orders
 
@@ -36,16 +35,31 @@ class Oracledatabase implements Database {
     }
 }
 
-$database = new mysqldatabase();
+class cash implements Payment {
+    public function listorders(){
+        //Listing orders
+
+    }
+    public function addorder(){
+        //adding orders 
+    }
+    public function removeorder(){
+        //removing orders
+    }
+}
+$database = new contactless();
 foreach ($database->$listorders () as $order){
     //listing orders code
 }
     
-$database = new Oracledatabase();
+$database = new card();
 foreach ($database->$listorders () as $order){
     //listing orders code
 }
-
+    
+foreach ($database->$listorders () as $order){
+    //listing orders code
+}
 
 
 ?>
