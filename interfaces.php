@@ -48,16 +48,16 @@ class cash implements Payment {
     }
 }
 $database = new contactless();
-foreach ($database->$listorders () as $order){
+foreach ($database->listorders() as $order){
     //listing orders code
 }
     
 $database = new card();
-foreach ($database->$listorders () as $order){
+foreach ($database->listorders() as $order){
     //listing orders code
 }
     
-foreach ($database->$listorders () as $order){
+foreach ($database->listorders() as $order){
     //listing orders code
 }
 
