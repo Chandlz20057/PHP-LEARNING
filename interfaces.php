@@ -12,7 +12,7 @@ class contactless implements Payment {
 
     public function listorders(){
         //Listing orders
-
+        return ['contactless'];
     }
     public function addorder(){
         //adding orders 
@@ -25,7 +25,7 @@ class contactless implements Payment {
 class card implements Payment {
     public function listorders(){
         //Listing orders
-
+        return ['card'];
     }
     public function addorder(){
         //adding orders 
@@ -38,7 +38,7 @@ class card implements Payment {
 class cash implements Payment {
     public function listorders(){
         //Listing orders
-
+        return ['cash'];
     }
     public function addorder(){
         //adding orders 
@@ -48,18 +48,19 @@ class cash implements Payment {
     }
 }
 $database = new contactless();
-foreach ($database->listorders () as $order){
+foreach ($database->listorders () as $order )
     //listing orders code
-}
+
     
 $database = new card();
-foreach ($database->listorders () as $order){
+foreach ($database->listorders () as $order )
     //listing orders code
-}
-    
-foreach ($database->listorders () as $order){
+
+
+$database = new cash();
+foreach ($database->listorders () as $order )
     //listing orders code
-}
+
 
 
 ?>
