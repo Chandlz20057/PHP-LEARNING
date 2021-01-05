@@ -1,15 +1,15 @@
 <?php
-$CarOptions= array(
+$CarOptions=[
 'Audi',
 'Lambo',
 'Volkswagen',
 'Mustang'
-);
-    $Cars = array('Volkswagen','Audi','Lambo','Mustang');
-    if(!empty($_POST['car']) && is_array($_POST['car'])){
-    foreach($_POST['car'] as $Car){
+];
+    $Cars = [];
+    if(!empty($_POST['cars']) && is_array($_POST['cars'])){
+    foreach($_POST['cars'] as $Car){
     if(in_array($Car,$CarOptions)){
-    $Car[]=$Car;
+    $Cars[]=$Car;
     }
     }
     }
