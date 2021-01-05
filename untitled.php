@@ -32,6 +32,13 @@ $CarOptions= array(
     Mustang
     <input type=”checkbox” name=”vegetables[]” value=''>
     </label>
-    <input type="submit" name="submit" value="true">
+
     
+    <form action="lol.php" method="GET">
+    <input type="submit" name="submit" value="true">
+    <?php 
+    if  (isset( $_GET['submit'] )) {
+        echo 'DO YOU LIKE CAR?';
+    }
+    ?>
     </form>
