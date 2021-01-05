@@ -5,32 +5,32 @@ $CarOptions= array(
 'Volkswagen',
 'Mustang'
 );
-    $Car = array();
-    If(!empty($_POST['car']) && is_array($_POST['car'])){
-    Foreach($_POST['car'] as $Car){
-    If(in_array($Car,$CarOptions)){
+    $Cars = array('Volkswagen','Audi','Lambo','Mustang');
+    if(!empty($_POST['car']) && is_array($_POST['car'])){
+    foreach($_POST['car'] as $Car){
+    if(in_array($Car,$CarOptions)){
     $Car[]=$Car;
     }
     }
     }
-    Var_dump($Car);
+    var_dump($Cars);
     ?>
     <form action=””method=”post”>
     <label>
     Audi
-    <input type=”checkbox” name=”vegetables[]” value=''>
+    <input type=”checkbox” name=”cars[]” value=''>
     <label>
     <label>
     Lambo
-    <input type=”checkbox” name=”vegetables[]” value=''>
+    <input type=”checkbox” name=”cars[]” value=''>
     </label>
     <label>
     Volkswagen
-    <input type=”checkbox” name=”vegetables[]” value=''>
+    <input type=”checkbox” name=”cars[]” value=''>
     </label>
     <label>
     Mustang
-    <input type=”checkbox” name=”vegetables[]” value=''>
+    <input type=”checkbox” name=”cars[]” value=''>
     </label>
 
 
