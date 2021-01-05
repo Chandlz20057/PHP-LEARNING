@@ -33,12 +33,13 @@ $CarOptions= array(
     <input type=”checkbox” name=”vegetables[]” value=''>
     </label>
 
-    
+
     <form action="lol.php" method="GET">
-    <input type="submit" name="submit" value="true">
+    <input type="submit" name="submit" value="SUBMIT">
     <?php 
     if  (isset( $_GET['submit'] )) {
         echo 'DO YOU LIKE CAR?';
     }
     ?>
+
     </form>
