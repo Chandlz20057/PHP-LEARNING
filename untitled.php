@@ -15,7 +15,7 @@ $CarOptions=[
     }
     var_dump($Cars);
     ?>
-    <form action=””method=”post”>
+    <form action=””method=”POST”>
     <label>
     Audi
     <input type=”checkbox” name=”cars[]” value=''>
@@ -32,7 +32,7 @@ $CarOptions=[
     Mustang
     <input type=”checkbox” name=”cars[]” value=''>
     </label>
-
+</form>
 
     <form action="lol.php" method="GET">
     <input type="submit" name="submit" value="SUBMIT">
